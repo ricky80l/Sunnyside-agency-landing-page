@@ -1,0 +1,452 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background-size: cover !important;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* NAV SECTION */
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.nav_cont {
+    justify-content: space-between;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    margin-left: 0.6rem;
+}
+
+.nav-link:hover {
+    color: hsl(0, 0%, 0%) !important;
+    transition: 0.3s;
+}
+
+.highlighted {
+    display: block;
+    padding: 0.5rem 1rem !important;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%) !important;
+    border-radius: 2rem;
+}
+
+.highlighted:hover {
+    transition: 0.3s;
+    color: hsl(0, 0%, 100%) !important;
+    background-color: #6fcfff;
+}
+
+
+/* MAIN SECTION */
+
+.main {
+    max-width: 65rem;
+    font-size: 1.125rem;
+}
+
+h1,
+h2,
+h3,
+.highlighted,
+.learn,
+.client_header,
+.testimonial_name {
+    font-family: 'Fraunces', serif;
+}
+
+.col-12,
+.col-md-6 {
+    min-height: 25rem;
+}
+
+
+/* HEADER SECTION */
+
+.title {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    margin: 3rem 2rem 4rem;
+    letter-spacing: 0.6rem;
+    font-size: 2rem;
+}
+
+.arrow {
+    display: block;
+    margin: 0 auto 15rem;
+    width: 1.5rem;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    transform: scaley(1.1);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.header {
+    background: url(../images/desktop/image-header.jpg) no-repeat center bottom;
+}
+
+
+/* TRANSFORM SECTION */
+
+.middle {
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+
+.desc {
+    font-size: 1rem;
+    color: #86848f;
+    margin: 1.3rem 0;
+}
+
+.learn {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+    position: relative;
+}
+
+.learn:hover {
+    color: hsl(0, 0%, 0%);
+}
+
+.learn::after {
+    content: '';
+    width: 8.8rem;
+    height: 0.6rem;
+    background-color: hsla(51, 100%, 49%, 0.417);
+    position: absolute;
+    right: -0.4rem;
+    top: 1rem;
+    z-index: -2;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.learn:hover:after {
+    transition: 0.3s;
+    background-color: hsla(51, 100%, 49%, 0.876);
+}
+
+.transform_img,
+.standout_img,
+.graphic,
+.photography,
+.col-md-3 {
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.transform_img {
+    background-image: url(../images/desktop/image-transform.jpg);
+}
+
+
+/* STANDOUT SECTION */
+
+.standout_img {
+    background-image: url(../images/desktop/image-stand-out.jpg);
+}
+
+.learn_stand::after {
+    content: '';
+    width: 8.8rem;
+    height: 0.6rem;
+    background-color: hsl(7, 99%, 70%, 0.417);
+    position: absolute;
+    right: -0.4rem;
+    top: 1rem;
+    z-index: -2;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+
+.learn_stand:hover:after {
+    transition: 0.3s;
+    background-color: rgba(254, 121, 103, 0.857);
+}
+
+
+/* .GRAPHIC SECTION */
+
+.bottom {
+    display: flex;
+    padding: 15rem 7% 2rem;
+}
+
+.graphic {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    text-align: center;
+}
+
+.green {
+    color: hsl(167, 40%, 24%);
+}
+
+
+/* PHOTOGRAPHY SECTION */
+
+.photography {
+    background-image: url(../images/desktop/image-photography.jpg);
+    text-align: center;
+}
+
+.blue {
+    color: hsl(198, 62%, 26%);
+}
+
+
+/* TESTIMONIAL SECTION */
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.client_header {
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #a5a6a8;
+    margin: 5rem 0 3rem;
+    letter-spacing: 0.4rem;
+}
+
+.avatar {
+    border-radius: 100%;
+    margin: 0 auto;
+    display: block;
+    width: 3.5rem;
+}
+
+.client_desc {
+    color: #666a73;
+    font-size: 1rem;
+    margin: 2.5rem 2%;
+}
+
+.testimonial_name {
+    color: hsl(212, 27%, 19%);
+    font-weight: 900;
+}
+
+.testimonial_ruole {
+    color: hsl(232, 10%, 55%);
+    margin: 0.5rem 0 5rem;
+    font-size: 0.9rem;
+}
+
+
+/* GALLERY SECTION */
+
+.gallery {
+    min-height: 21rem;
+}
+
+.milk {
+    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+}
+
+.orange {
+    background-image: url(../images/desktop/image-gallery-orange.jpg);
+}
+
+.cone {
+    background-image: url(../images/desktop/image-gallery-cone.jpg);
+}
+
+.sugar {
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+}
+
+
+/* FOOTER SECTION */
+
+.footer {
+    text-align: center;
+    background-color: #90d4c5;
+    max-width: 66.5rem;
+}
+
+.footer_col {
+    min-height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_header {
+    color: hsl(167, 40%, 24%);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+}
+
+.footer_link a {
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+}
+
+.footer_link a:nth-child(2) {
+    margin: 0 2.5rem;
+}
+
+.social {
+    margin: 3rem 0 4rem;
+}
+
+.social a {
+    font-size: 1.2rem;
+    color: hsl(167, 40%, 24%);
+    margin: 0 0.7rem;
+}
+
+.footer_link a:hover,
+.social a:hover {
+    transition: 0.3s;
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* COPYRIGHT  */
+
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    font-size: 0.8rem;
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:1050px) {
+    .row {
+        margin: 0 auto !important;
+    }
+}
+
+@media screen and (max-width:991px) {
+    * {
+        text-align: center;
+    }
+    .navbar-nav {
+        padding: 1rem 3rem 1.5rem;
+        margin-top: 2.5rem;
+        background: hsl(0, 0%, 100%);
+        text-align: center;
+        position: absolute;
+        right: 0.9rem;
+    }
+    .navbar-toggler,
+    .navbar-toggler-icon {
+        box-shadow: none !important;
+        border: none;
+    }
+    .navbar-toggler {
+        padding-right: 0;
+    }
+    .navbar-toggler-icon {
+        background: url(../images/icon-hamburger.svg) no-repeat center !important;
+    }
+    .navbar-nav::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: -1.3rem;
+        width: 0;
+        height: 0;
+        border-bottom: 1rem solid none;
+        border-left: 1.2rem solid none;
+        border-right: 1.2rem solid hsl(0, 0%, 100%);
+        border-top: 1.4rem solid transparent;
+        clear: both;
+    }
+    .highlighted {
+        color: hsl(0, 0%, 0%) !important;
+        background-color: hsl(51, 100%, 49%);
+    }
+    .nav-link {
+        color: #86848f;
+        line-height: 2rem;
+    }
+    .gallery {
+        min-height: 25rem;
+    }
+    .header {
+        background: url(../images/mobile/image-header.jpg) no-repeat center bottom;
+    }
+    .transform_img {
+        background-image: url(../images/mobile/image-transform.jpg);
+    }
+    .standout_img {
+        background-image: url(../images/mobile/image-stand-out.jpg);
+    }
+    .graphic {
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+        text-align: center;
+    }
+    .photography {
+        background-image: url(../images/mobile/image-photography.jpg);
+        text-align: center;
+    }
+    .milk {
+        background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+    }
+    .orange {
+        background-image: url(../images/mobile/image-gallery-orange.jpg);
+    }
+    .cone {
+        background-image: url(../images/mobile/image-gallery-cone.jpg);
+    }
+    .sugar {
+        background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+    @media screen and (max-width:767px) {
+        .invert {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .footer_col {
+            min-height: 20rem;
+        }
+    }
+}
