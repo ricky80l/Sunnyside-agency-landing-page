@@ -402,6 +402,9 @@ h3,
         color: hsl(0, 0%, 0%) !important;
         background-color: hsl(51, 100%, 49%);
     }
+    .highlighted:hover {
+        background-color: hsl(51, 100%, 49%);
+    }
     .nav-link {
         color: #86848f;
         line-height: 2rem;
