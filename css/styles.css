@@ -366,8 +366,12 @@ h3,
     * {
         text-align: center;
     }
+    .nav-link {
+        font-size: 1.1rem;
+    }
     .navbar-nav {
-        padding: 1rem 3rem 1.5rem;
+        padding: 1.5rem 3rem 2.5rem;
+        width: 94%;
         margin-top: 2.5rem;
         background: hsl(0, 0%, 100%);
         text-align: center;
@@ -399,11 +403,13 @@ h3,
         clear: both;
     }
     .highlighted {
+        margin-top: 0.8rem;
         color: hsl(0, 0%, 0%) !important;
         background-color: hsl(51, 100%, 49%);
     }
     .highlighted:hover {
-        background-color: hsl(51, 100%, 49%);
+        color: #666a73 !important;
+        background-color: hsla(51, 100%, 49%, 0.705);
     }
     .nav-link {
         color: #86848f;
